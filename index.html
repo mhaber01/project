@@ -85,9 +85,8 @@ h3 {
 }
 
 /* Style the logo */
-#navbar #logo {
+#navbar #logo{
   font-size: 60px;
-  font-weight: bold;
   transition: 0.6s;
 }
 
@@ -319,7 +318,7 @@ hr {
 /* Create a Parallax Effect */
 .bgimg-1{
   background-attachment: fixed;
-  background-position: center top 20px;
+  background-position: center top 10px;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -429,25 +428,43 @@ a {
 /*.w3-hover-opacity {cursor: pointer;}
 
 /* Style the navigation menu */
-.topnav {
+#topnav {
+  overflow: hidden;
+  background-color: white;
+  padding: 8px 8px; /* Large padding which will shrink on scroll (using JS) */
+  transition: 0.8s; /* Adds a transition effect when the padding is decreased */
+  width: 100%;
+  top: 0; /* At the top */
+  z-index: 99;
   overflow: hidden;
   position: relative;
 }
 
+#topnav #logo2 {
+  font-size: 60px;
+  transition: 0.6s;
+}
+
+@media screen and (max-width: 580px) {
+  #topnav {
+    padding: 5px 10px !important;
+  }
+}
+
 /* Hide the links inside the navigation menu (except for logo/home) */
-.topnav #myLinks {
+#topnav #myLinks {
   display: none;
 }
 
 /* Style navigation menu links */
-.topnav a {
+#topnav a {
   color: #383C50;
   text-decoration: none;
   font-size: 50px;
 }
 
 /* Style the hamburger menu */
-.topnav a.icon {
+#topnav a.icon {
   display: block;
   position: absolute;
   right: 0;
@@ -462,7 +479,7 @@ a {
 
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
-  <div id="navbar" class="w3-center">
+  <div class="w3-center">
 
     <!-- Top Left 
     <div style="position: absolute;">
@@ -474,9 +491,9 @@ a {
     -->
 
     <!-- Title -->
-    <div class="w3-hide-small">
+    <div id="navbar" class="w3-hide-small w3-hide-medium">
     	<a href="#home" id="logo" class="button-title" style="font-family:AmostelySignature; font-weight: inherit;">Elizabeth & Justin</a>
-    </div>
+    
 
     <!-- Right 
     <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
@@ -484,26 +501,27 @@ a {
     </a>
     -->
 
-    <a href="#ourwedding" class="w3-hide-small button w3-center">OUR WEDDING</a>
-    <a href="#schedule" class="w3-hide-small button w3-center">SCHEDULE OF EVENTS</a>
-    <a href="#wheretostay" class="w3-hide-small button w3-center">WHERE TO STAY</a>
-    <a href="#thingstodo" class="w3-hide-small button w3-center">THINGS TO DO</a>
-    <a href="#gettingaround" class="w3-hide-small button w3-center">GETTING AROUND</a>
-    <a href="#registry" class="w3-hide-small button w3-center">REGISTRY</a>
+      <a href="#ourwedding" class="w3-hide-small w3-hide-medium button w3-center">OUR WEDDING</a>
+      <a href="#schedule" class="w3-hide-small w3-hide-medium button w3-center">SCHEDULE OF EVENTS</a>
+      <a href="#wheretostay" class="w3-hide-small w3-hide-medium button w3-center">WHERE TO STAY</a>
+      <a href="#thingstodo" class="w3-hide-small w3-hide-medium button w3-center">THINGS TO DO</a>
+      <a href="#gettingaround" class="w3-hide-small w3-hide-medium button w3-center">GETTING AROUND</a>
+      <a href="#registry" class="w3-hide-small w3-hide-medium button w3-center">REGISTRY</a>
+    </div>
 
     <!--Navbar on small screens-->
     <!-- Top Navigation Menu -->
     <!-- Simulate a smartphone / tablet -->
     <div class="mobile-container">
-      <div class="topnav w3-hide-medium w3-hide-large">
-        <a href="#home" class="active" style="font-family:AmostelySignature; font-weight: inherit;">Elizabeth & Justin</a>
+      <div id="topnav" class="w3-hide-large">
+        <a href="#home" id="logo2" class="active" style="font-family:AmostelySignature; font-weight: inherit;">Elizabeth & Justin</a>
         <!-- Navigation links (hidden by default) -->
         <div id="myLinks">
-          <a href="#ourwedding" class="button">OUR WEDDING</a>
-          <a href="#schedule" class="button">SCHEDULE</a>
-          <a href="#wheretostay" class="button">WHERE TO STAY</a>
-          <a href="#thingstodo" class="button">THINGS TO DO</a>
-          <a href="#gettingaround" class="button">GETTING AROUND</a>
+          <a href="#ourwedding" class="button">OUR WEDDING</a><br>
+          <a href="#schedule" class="button">SCHEDULE</a><br>
+          <a href="#wheretostay" class="button">WHERE TO STAY</a><br>
+          <a href="#thingstodo" class="button">THINGS TO DO</a><br>
+          <a href="#gettingaround" class="button">GETTING AROUND</a><br>
           <a href="#registry" class="button">REGISTRY</a>
         </div>
         <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
@@ -1360,12 +1378,18 @@ window.onscroll = function() {scrollFunction()};
 function scrollFunction() {
   if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
     document.getElementById("navbar").style.padding = "5px 8px";
+    document.getElementById("topnav").style.padding = "5px 8px";
     document.getElementById("logo").style.fontSize = "40px";
+    document.getElementById("logo2").style.fontSize = "40px";
     document.getElementById("navbar").style.borderBottom = "2px solid #383C50";
+    document.getElementById("topnav").style.borderBottom = "2px solid #383C50";
   } else {
     document.getElementById("navbar").style.padding = "8px 8px";
+    document.getElementById("topnav").style.padding = "8px 8px";
     document.getElementById("logo").style.fontSize = "60px";
+    document.getElementById("logo2").style.fontSize = "60px";
     document.getElementById("navbar").style.borderBottom = "none";
+    document.getElementById("topnav").style.borderBottom = "none";
   }
 }
 
