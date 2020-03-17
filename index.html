@@ -7,7 +7,6 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<script type="text/javascript" src="https://addevent.com/libs/atc/1.6.1/atc.min.js" async defer></script>
 
 <style>
 
@@ -46,8 +45,6 @@ body, html {
 }
 
 * {box-sizing: border-box;}
-
-
 
 h2 {
   font-size: 40px;
@@ -141,24 +138,9 @@ h3 {
   -webkit-user-select:none;
   -webkit-font-smoothing:antialiased!important;
   cursor:pointer;
-  /*
-  z-index:99998;
-  background:#fff;
-  border:1px solid transparent;
-  padding:10px 10px 10px 10px;
-  -webkit-border-radius:3px;
-  border-radius:3px;
-  cursor:pointer;
-  -webkit-font-smoothing:antialiased!important;
-  outline-color:rgba(0,78,255,0.5);text-shadow:1px 1px 1px rgba(0,0,0,0.004);
-  -webkit-user-select:none;
-  -webkit-tap-highlight-color:rgba(0,0,0,0);
-  box-shadow:0 0 0 0.5px rgba(50,50,93,.17), 0 2px 5px 0 rgba(50,50,93,.1), 0 1px 1.5px 0 rgba(0,0,0,.07), 0 1px 2px 0 rgba(0,0,0,.08);
-  */
 }
 
 .booknow:hover{
-  /*background: #fafafa;*/
   border-bottom: 2px solid currentColor;
   color: #77633d;
   -webkit-tap-highlight-color: transparent;
@@ -170,30 +152,6 @@ a.url:hover{
   color: #77633d;
   -webkit-tap-highlight-color: transparent;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
-
-#wedding_date {
-  float: left;
-  display: inline block;
-  margin: 0;
-  padding-left: 5px;
-  font-size: 14px;
-}
-
-#wedding_location {
-  float: left;
-  display: inline block;
-  margin: 0;
-  padding-left: 15px;
-  font-size: 14px;
-}
-
-#wedding_hashtag {
-  float: right;
-  display: inline block;
-  padding-right: 5px;
-  font-size: 14px;
-  margin: 0;
 }
 
 hr {
@@ -217,6 +175,29 @@ hr {
   flex-wrap: wrap;
   justify-content: center;
   vertical-align: top;
+}
+
+.center-row-registry {
+  display: inline-block;
+  vertical-align: center;
+}
+
+.row-registry {
+  display: -webkit-flex; /* Safari */
+  -webkit-align-items: top; /* Safari 7.0+ */
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  vertical-align: center;
+}
+
+.button-registry{
+  text-decoration: none;
+  cursor:pointer;
+}
+
+.button-registry:hover {
+  opacity: 0.5;
 }
 
 .w3-bottombar{
@@ -363,16 +344,6 @@ hr {
   background-size: cover;
 }
 
-
-/* Slides */
-.mySlides {display:none}
-.w3-tag, .fa {cursor:pointer}
-.w3-tag {height:15px;width:15px;padding:0;margin-top:6px}
-
-a {
-  text-decoration: none;
-}
-
 /* First image */
 .bgimg-1 {
     background-image: url('EngagementPhotos/0099.jpg');
@@ -412,6 +383,17 @@ a {
 .lighthouse {
   background-image: url("BanegatLight_BackgroundImage.png");
 }
+
+
+/* Slides */
+.mySlides {display:none}
+.w3-tag, .fa {cursor:pointer}
+.w3-tag {height:15px;width:15px;padding:0;margin-top:6px}
+
+a {
+  text-decoration: none;
+}
+
 
 /* Turn off parallax scrolling for tablets and phones */
 @media only screen and (max-device-width: 1024px) {
@@ -471,8 +453,6 @@ a {
   top: 0;
 }
 
-
-
 </style>
 
 <body>
@@ -530,19 +510,7 @@ a {
         </a>
       </div>
     </div>
-    
   </div>
-
-  <!--
-  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium" style="display: block; position: relative;">
-    <a href="#ourwedding" class="w3-bar-item w3-button button" onclick="toggleFunction()">OUR WEDDING</a>
-    <a href="#schedule" class="w3-bar-item w3-button button" onclick="toggleFunction()">SCHEDULE OF EVENTS</a>
-    <a href="#wheretostay" class="w3-bar-item w3-button button" onclick="toggleFunction()">WHERE TO STAY</a>
-    <a href="#thingstodo" class="w3-bar-item w3-button button" onclick="toggleFunction()">THINGS TO DO</a>
-    <a href="#gettingaround" class="w3-bar-item w3-button button" onclick="toggleFunction()">GETTING AROUND</a>
-    <a href="#registry" class="w3-bar-item w3-button button" onclick="toggleFunction()">REGISTRY</a>
-  </div>
-  -->
 </div>
 
 <!-- First Parallax Image with Justin & Liz Text -->
@@ -579,171 +547,11 @@ a {
         <h3 class="w3-center" style="margin-top:25px; margin-bottom: 100px; font-size: 20px; font-family: woodford-bourne;">BEACH HAVEN, LONG BEACH ISLAND, NEW JERSEY</h3>
       </div>
   </div>
-
 </div>
 
-  <!--<div class="w3-row">
-    <div class="w3-col m6 w3-center w3-padding-large w3-hide-small">
-      <br>
-      <br>
-      <img src="picture1.JPG" class="w3-round w3-image w3-hover-opacity" alt="Picture" width="500" height="333">
-    </div>
-	-->
-
-  <!-- Notes
-    <div class="w3-center" style="margin-left: 100px; margin-right: 100px;">
-      <p style="padding-top:70px; font-size: 20px;">Mark your calendars because the date has been set! Join us on our big day at the place where our relationship began, the Jersey Shore. With a full itinerary set from Friday, September 18 to Saturday, September 19, we know you'll love the shore just as much as we do. You can find all wedding, reception, and morning after details below.</p>
-      <p style="font-family:charger-regular; font-size:30px; margin-top:-20px; padding-left: 35px;">xoxo, Justin & Liz</p>
-    </div>
-  </div>
 <!-- Second Parallax Image with Your Stay Text -->
 <div class="bgimg-2 w3-display-container w3-center">
 </div>
-
-  <!-- The Wedding Party -->
-  <!-- class="w3-bottombar" 
-
-  <div class="w3-container w3-padding-64 w3-center">
-    <h2 class="sectionTitle" style="font-family:charger-regular; margin-bottom:-30px; margin-top:-40px;">The Wedding Party</h2>
-    <h3>The Bridesmaids</h3>
-
-    <div class="center-row">
-      <div class="row"><br>
-
-        <div>
-          <img src="bridesmaids/icon.png" alt="Name" style="width:45%" class="w3-circle w3-hover-opacity">
-          <h3>Name</h3>
-          <p>Title</p>
-          </a>
-        </div>
-
-        <div>
-          <img src="bridesmaids/icon.png" alt="Name" style="width:45%" class="w3-circle w3-hover-opacity">
-          <h3>Name</h3>
-          <p>Title</p>
-        </div>
-
-        <div>
-          <img src="bridesmaids/icon.png" alt="Name" style="width:45%" class="w3-circle w3-hover-opacity">
-          <h3>Name</h3>
-          <p>Title</p>
-        </div>
-
-        <div>
-          <img src="bridesmaids/icon.png" alt="Name" style="width:45%" class="w3-circle w3-hover-opacity">
-          <h3>Name</h3>
-          <p>Title</p>
-        </div>
-
-        <div>
-          <img src="bridesmaids/icon.png" alt="Name" style="width:45%" class="w3-circle w3-hover-opacity">
-          <h3>Name</h3>
-          <p>Title</p>
-        </div>
-
-      </div>
-    </div>
-
-    <h3>The Groomsmen</h3>
-
-    <div class="center-row">
-      <div class="row"><br>
-
-        <div>
-          <img src="groomsmen/icon.png" alt="Name" style="width:45%" class="w3-circle w3-hover-opacity">
-          <h3>Name</h3>
-          <p>Title</p>
-        </div>
-
-        <div>
-          <img src="groomsmen/icon.png" alt="Name" style="width:45%" class="w3-circle w3-hover-opacity">
-          <h3>Name</h3>
-          <p>Title</p>
-        </div>
-
-        <div>
-          <img src="groomsmen/icon.png" alt="Name" style="width:45%" class="w3-circle w3-hover-opacity">
-          <h3>Name</h3>
-          <p>Title</p>
-        </div>
-
-        <div>
-          <img src="groomsmen/icon.png" alt="Name" style="width:45%" class="w3-circle w3-hover-opacity">
-          <h3>Name</h3>
-          <p>Title</p>
-        </div>
-
-        <div>
-          <img src="groomsmen/icon.png" alt="Name" style="width:45%" class="w3-circle w3-hover-opacity">
-          <h3>Name</h3>
-          <p>Title</p>
-        </div>
-
-      </div>
-    </div>
-
-    <h3>The Ring Bearer & Flower Girl</h3>
-    
-    <div class="center-row">
-      <div class="row"><br>
-
-  	   <div>
-  	     <img src="groomsmen/icon.png" alt="Name" style="width:45%" class="w3-circle w3-hover-opacity">
-  	     <h3>Name</h3>
-  	     <p>Title</p>
-  	   </div>
-
-  	   <div>
-  	     <img src="groomsmen/icon.png" alt="Name" style="width:45%" class="w3-circle w3-hover-opacity">
-  	     <h3>Name</h3>
-  	     <p>Title</p>
-  	   </div>
-
-      </div>
-    </div>
-
-    <h3>The Parents of the Bride</h3>
-
-    <div class="center-row">
-      <div class="row"><br>
-
-        <div>
-          <img src="groomsmen/icon.png" alt="Name" style="width:45%" class="w3-circle w3-hover-opacity">
-          <h3>Name</h3>
-          <p>Title</p>
-        </div>
-
-        <div>
-          <img src="groomsmen/icon.png" alt="Name" style="width:45%" class="w3-circle w3-hover-opacity">
-          <h3>Name</h3>
-          <p>Title</p>
-        </div>
-
-      </div>
-    </div>
-
-    <h3>The Parents of the Groom</h3>
-
-    <div class="center-row">
-      <div class="row"><br>
-
-        <div>
-          <img src="groomsmen/icon.png" alt="Name" style="width:45%" class="w3-circle w3-hover-opacity">
-          <h3>Name</h3>
-          <p>Title</p>
-        </div>
-
-        <div>
-          <img src="groomsmen/icon.png" alt="Name" style="width:45%" class="w3-circle w3-hover-opacity">
-          <h3>Name</h3>
-          <p>Title</p>
-        </div>
-
-      </div>
-    </div>
-
-  </div>
-  -->
 
 <!-- Schedule of Events -->
 <div class="w3-content w3-container w3-padding-64" id="schedule">
@@ -763,11 +571,6 @@ a {
     <div class="w3-content w3-center" style="max-width:700px">
     
       <div class="w3-row w3-center w3-padding">
-        <!--
-        <a href="javascript:void(0)" onclick="openMenu(event, 'Sept17');" id="myLink">
-          <div class="w3-col tablink" style="font-size: 16px; width: 33%; font-family: woodford-bourne;">Thursday, September 17, 2020</div>
-        </a>
-        -->
         <a href="javascript:void(0)" onclick="openMenu(event, 'Sept18');" id="myLink">
           <div class="w3-col tablink" style="font-size: 16px; width: 33%; font-family: woodford-bourne;">Friday, September 18, 2020</div>
         </a>
@@ -778,18 +581,6 @@ a {
           <div class="w3-col tablink" style="font-size: 16px; width: 33%; font-family: woodford-bourne;">Sunday, September 20, 2020</div>
         </a>
       </div>
-      <!--
-      <div id="Sept17" class="w3-container itinerary w3-padding-32">
-        <div>
-          <h5 style="font-size: 20px; font-family: woodford-bourne;">Welcome Brews & Cocktails</h5>
-          <div class="w3-opacity">
-            <p>Details to come!</p>
-            <p>Address</p>
-            <p>Time</p><br>
-          </div>
-        </div>
-      </div> 
-      -->
 
       <div id="Sept18" class="w3-container itinerary w3-padding-32">
         <div>
@@ -799,24 +590,7 @@ a {
             <p><a class="url" href="https://goo.gl/maps/CQ6KDfVchvti6g8C9" target="_blank">2nd Street, Beach Haven, NJ 08008</a></p>
             <p>1:30 PM</p>
           </div>
-          <!--
-          <div style="margin-bottom: 10px;">
-            <div title="Add to Calendar" class="addeventatc" style="color: #151B54 !important;">
-              ADD TO CALENDAR
-              <span class="start">09/18/2020 01:30 PM</span>
-              <span class="end">09/18/2020 3:30 PM</span>
-              <span class="timezone">America/New_York</span>
-              <span class="title">The Wedding Ceremony @ St. Thomas Aquinas Church</span>
-              <span class="description"></span>
-              <span class="location">2nd Street, Beach Haven, NJ 08008</span>
-            </div>
-          </div>
-          
-          <button class="booknow"><a href="https://goo.gl/maps/WLi4CLMGLGx7Pnm67" target="_blank"><img src="placeholder.png" style="width: 32px; height: 22px; padding-right: 10px; padding-left: -5px;"><img placeholder.png>MAP</a></button>
-          -->
         </div>
-        
-      
         <div style="padding-top: 5%;">
           <h5 style="font-size: 20px; font-family: woodford-bourne;">Reception</h5>
           <div class="w3-opacity">
@@ -824,21 +598,6 @@ a {
             <p><a class="url" href="https://goo.gl/maps/WLi4CLMGLGx7Pnm67" target="_blank">116 Northwest Avenue, Beach Haven, NJ 08008</a></p>
             <p>6:00 PM - 11:00 PM</p>
           </div>
-          <!--
-          <div style="margin-bottom: 10px;">
-            <div title="Add to Calendar" class="addeventatc" style="color: #151B54 !important;">
-              ADD TO CALENDAR
-              <span class="start">09/18/2020 06:00 PM</span>
-              <span class="end">09/18/2020 11:00 PM</span>
-              <span class="timezone">America/New_York</span>
-              <span class="title">The Reception @ Parker's Garage & Oyster Saloon</span>
-              <span class="description"></span>
-              <span class="location">116 Northwest Avenue, Beach Haven, NJ 08008</span>
-            </div>
-          </div>
-          
-          <button class="booknow"><a href="https://goo.gl/maps/WLi4CLMGLGx7Pnm67" target="_blank"><img src="placeholder.png" style="width: 32px; height: 22px; padding-right: 10px; padding-left: -5px;">MAP</a></button>
-          -->
         </div>
       
         <div style="padding-top: 5%;">
@@ -848,23 +607,7 @@ a {
               <p><a class="url" href="https://goo.gl/maps/1oHxx6huaUSMmkBy7" target="_blank">529 Dock Road, Beach Haven, NJ 08008</a></p>
               <p>11:00 PM</p>
             </div>
-            <!--
-            <div style="margin-bottom: 10px;">
-              <div title="Add to Calendar" class="addeventatc" style="color: #151B54 !important;">
-                ADD TO CALENDAR
-                <span class="start">09/18/2020 11:00 PM</span>
-                <span class="end">09/18/2020 01:00 AM</span>
-                <span class="timezone">America/New_York</span>
-                <span class="title">Bird & Betty's</span>
-                <span class="description"></span>
-                <span class="location">529 Dock Road, Beach Haven, NJ 08008</span>
-              </div>
-            </div>
-            
-            <button class="booknow"><a href="https://goo.gl/maps/WLi4CLMGLGx7Pnm67" target="_blank"><img src="placeholder.png" style="width: 32px; height: 22px; padding-right: 10px; padding-left: -5px;">MAP</a></button>
-            -->
         </div>
-
       </div>
 
       <div id="Sept19" class="w3-container itinerary w3-padding-32">
@@ -889,9 +632,7 @@ a {
         </div>
       </div> 
     </div>
-
   </div>
-
 </div>
 
   <!-- Third Parallax Image with Your Stay Text -->
@@ -925,9 +666,8 @@ a {
     </div>
   </div>
 
-
-
   <!-- Big Screen -->
+
   <div class="w3-container w3-center w3-hide-small">
     <h3>Rental Housing</h3>
     <div class="center-row">
@@ -1078,45 +818,6 @@ a {
       <p><a href="https://theseashellresort.com/" target="_blank" class="booknow" style="width:105px;">BOOK NOW</a></p>
     </div>
   </div>
-
-    <!--
-    <div class="w3-row-padding w3-center">
-      Info Block Template 
-      <div class="w3-col l3 m6 w3-margin-bottom">
-        <h3>Hotel 1</h3>
-        <p class="w3-opacity">Address<br>$$<br>Other</p>
-        <p>Great option.</p>
-        <p><a href="" target="_blank"><button class="w3-button main-color main-hover-color">Visit Website!</button></a></p>
-      </div>
-      <div class="w3-col l3 m6 w3-margin-bottom">
-        <h3>Hotel 2</h3>
-        <p class="w3-opacity">Address<br>$$<br>Other</p>
-        <p>Great option, too.</p>
-        <p><a href="" target="_blank"><button class="w3-button main-color main-hover-color">Visit Website!</button></a></p>
-      </div>
-    </div>
-  -->
-
-    <!--
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <h3>Explore Your Opportunities (EYO)</h3>
-      <p class="w3-opacity">Saturday, March 30<br>9:00 AM (8AM, Meet @ Kelly)<br>Mount Saint Vincents</p>
-      <p>AAUW is hosting EYO (Explore Your Opportunities), the annual hands-on STEM conference to explore careers in science, technology, engineering, and math for 7th grade girls in New York City and Westchester County, and has asked for MC SWE's assistance. Join us as we introduce more girls to STEM! FREE Breakfast, lunch, and transportation will be provided.</p>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <h3>SWE for Scouts</h3>
-      <p class="w3-opacity">Saturday, April 6<br>9:00 AM<br>LEO Hall</p>
-      <p>SWE welcomes the Girl Scouts of America to Manhattan College! Join us as we introduce Brownie and Junior Girl Scouts to all 5 disciplines of engineering plus computer science through fun and engaging workshops.</p>
-      <p><a href=""><button class="w3-button swe-purple swe-hover-purple" style="padding-left: 90px; padding-right: 90px;">I'm in!</button></a></p>
-    </div>
-  </div>
-  <div class="w3-row-padding">
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <h3>Northrop Grumman Lecture</h3>
-      <p class="w3-opacity">Saturday, April 9<br>3:30 - 5:30 PM<br>TBD</p>
-      <p></p>
-    </div>
-  -->
 </div>
 
 <!-- Fourth Parallax Image with Our Story Text -->
@@ -1131,13 +832,6 @@ a {
     <img src="StarFish_Icon.png" alt="Starfish" style="height: 110px; width: 120px;">
   </div>
 
-<!--
-  <div class="w3-center w3-hide-medium w3-hide-large" style="margin-bottom: 20px;">
-    <h3 style="margin-bottom: 30px; font-family: AmostelySignature; font-size: 50px;">Things to Do</h3>
-    <img src="Clam_Icon.png" alt="Clam Shell" style="height: 60px; width: 80px;">
-  </div>
--->
-
   <div class="w3-center">
     <div style="width: 70%; display: block; margin: auto;">
       <p>Check out our favorite places on the island! Use the interactive map by zooming in and clicking the icons to learn more about what this island has to offer.</p>
@@ -1146,90 +840,16 @@ a {
   <div class="w3-center w3-hide-small">
     <div style=" display:inline-block; overflow:hidden;">
       <iframe style="position:relative; border: none; " src="https://www.google.com/maps/d/embed?mid=1j51JUreXwJ91eCJExhc2_ma9ghmCSAKZ" width="700" height="400"></iframe>
-      <!-- top:-50px; -->
     </div>
   </div>
   <div class="w3-center w3-hide-large w3-hide-medium">
     <div style="display:inline-block; overflow:hidden; width: 100%; height: 80%;">
       <iframe style="position:relative; border: none; " src="https://www.google.com/maps/d/embed?mid=1j51JUreXwJ91eCJExhc2_ma9ghmCSAKZ" width="700" height="400"></iframe>
-      <!-- top:-50px; -->
     </div>
   </div>
 
 </div>
-<!--
-  <div class="w3-container w3-center">
-    <div class="center-row">
-      <div class="row"><br>
-        <div class="thingstodo_container" style="padding-right: 20px;">
-          <img src="ThingsToDo/longbeachisland.jpg" class="image">
-          <div class="middle">
-            <div class="text">
-              The Beach
-              <hr>
-              <div class="visit">VISIT</div>
-            </div>
-          </div>
-        </div>
 
-        <div class="thingstodo_container" style="padding-right: 20px;">
-          <img src="ThingsToDo/fantasyisland.jpg" class="image">
-          <div class="middle">
-            <div class="text">
-              <div style="line-height: 25px;">Fantasy Island Amusement Park</div>
-              <hr>
-              <div class="visit">VISIT</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="thingstodo_container" style="padding-right: 20px;">
-          <img src="ThingsToDo/bayvillage.jpg" class="image">
-          <div class="middle">
-            <div class="text">
-              Bay Village
-              <hr>
-              <div class="visit">VISIT</div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="row" style="padding-top: 10px;"><br>
-        <div class="thingstodo_container" style="padding-right: 20px;">
-          <img src="ThingsToDo/thunderingsurfwaterpark.jpg" class="image">
-          <div class="middle">
-            <div class="text">
-              <div style="line-height: 25px;">Thundering Surf Water Park</div>
-              <hr>
-              <div class="visit">VISIT</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="thingstodo_container" style="padding-right: 20px;">
-          <img src="ThingsToDo/minigolf.jpg" class="image">
-          <div class="middle">
-            <div class="text">
-              Mini Golf
-              <hr>
-              <div class="visit">VISIT</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="thingstodo_container" style="padding-right: 20px;">
-          <img src="ThingsToDo/viking-village-shop.jpg" class="image">
-          <div class="middle">
-            <div class="text">
-              Viking Village
-              <hr>
-              <div class="visit">VISIT</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    -->
 
 <!-- Fifth Parallax Image with Getting Around -->
 <div class="bgimg-5 w3-display-container w3-center">
@@ -1248,7 +868,7 @@ a {
       <p>One of the many reasons why we love Beach Haven is that it's in the heart of everything we love on the island and easily walkable and bikeable to our favorite spots! Below are a couple bike rental places we frequently rent from and taxi services if needed!</p>
     </div>
     
-    <!-- First Row -->
+    <!-- Big Screen -->
     <div class="w3-container w3-center w3-hide-small">
       <h3>Taxi & Shuttle Services</h3>
       <div class="center-row">
@@ -1303,6 +923,7 @@ a {
 
     </div>
 
+    <!-- Small Screen -->
     <div class="w3-container w3-center w3-hide-medium w3-hide-large">
       <h3>Taxi & Shuttle Services</h3>
       <div class="w3-container" style="height: 100%; width: 100%;">
@@ -1355,15 +976,65 @@ a {
 <!-- Registry -->
 <div class="w3-content w3-container w3-padding-64" id="registry">
   
-  <div class="w3-center" style="margin-bottom: 20px;">
+  <div class="w3-center">
     <h3 style="margin-bottom:30px; font-family: AmostelySignature; font-size: 80px;">Registry</h3>
     <img src="ScallopShell.png" alt="Scallop Shell" style="height: 100px; width: 120px;">
   </div>
 
-  <div class= "w3-center">
-    <div style="width: 70%; display: block; margin: auto;">
-      <h3>Coming Soon!</h3>
+  <!-- Big Screen -->
+  <div class="w3-container w3-center w3-hide-small w3-hide-medium" style="margin-top: -60px;">
+    <div class="center-row-registry">
+      <div class="row-registry">
+        <div class="w3-container button-registry" style="height: 100%; width: 220px;">
+          <a target="_blank" href="https://www.crateandbarrel.com/gift-registry/elizabeth-schumann-and-justin-haber/r6106630">
+            <img src="Registry/CrateAndBarrel.png" alt="Crate&Barrel" style="height: 200px; width: 210px; margin-left: 20px; margin-top: 2px;">
+          </a>
+        </div>
+        <div class="w3-container button-registry" style="height: 100%; width: 220px;">
+          <a target="_blank" href="https://www.potterybarn.com/registry/rmpd5gx79h/registry-list.html?bnrid=3302439&cm_ite=hero_logo_the_one">
+            <img src="Registry/PotteryBarn.png" alt="PotteryBarn" style="height: 200px; width: 230px; margin-top: 2px;">
+          </a>
+        </div>
+        <div class="w3-container button-registry" style="height: 100%; width: 220px;">
+          <a target="_blank" href="https://www.williams-sonoma.com/registry/rmpd5gx79h/registry-list.html">
+            <img src="Registry/WilliamsSonoma.png" alt="WilliamsSonoma" style="height: 200px; width: 230px;">
+          </a>
+        </div>
+        <div class="w3-container button-registry" style="height: 100%; width: 220px;">
+          <a target="_blank" href="https://www.westelm.com/registry/rmpd5gx79h/registry-list.html">
+            <img src="Registry/WestElm.jpeg" alt="WestElm" style="height: 25px; width: 140px; margin-top: 88px;">
+          </a>
+        </div>
+      </div>
     </div>
+  </div>
+
+  <!-- Small Screen -->
+  <div class="w3-container w3-center w3-hide-large">
+    <div class="w3-container button-registry" style="height: 100%; width: 100%; margin-bottom: -80px;">
+      <a target="_blank" href="https://www.crateandbarrel.com/gift-registry/elizabeth-schumann-and-justin-haber/r6106630">
+        <img src="Registry/CrateAndBarrel.png" alt="Crate&Barrel" style="height: 200px; width: 205px;">
+      </a>
+    </div>
+
+    <div class="w3-container button-registry" style="height: 100%; width: 100%; margin-bottom: -80px;">
+      <a target="_blank" href="https://www.potterybarn.com/registry/rmpd5gx79h/registry-list.html?bnrid=3302439&cm_ite=hero_logo_the_one">
+        <img src="Registry/PotteryBarn.png" alt="PotteryBarn" style="height: 210px; width: 230px;">
+      </a>
+    </div>
+
+    <div class="w3-container button-registry" style="height: 100%; width: 100%; margin-bottom: -80px;">
+      <a target="_blank" href="https://www.williams-sonoma.com/registry/rmpd5gx79h/registry-list.html">
+        <img src="Registry/WilliamsSonoma.png" alt="WilliamsSonoma" style="height: 200px; width: 220px;">
+      </a>
+    </div>
+
+    <div class="w3-container button-registry" style="height: 100%; width: 100%;">
+      <a target="_blank" href="https://www.westelm.com/registry/rmpd5gx79h/registry-list.html">
+        <img src="Registry/WestElm.jpeg" alt="WestElm" style="height: 25px; width: 140px; margin-top: 83px;">
+      </a>
+    </div>
+  </div>
   </div>
 </div>
 
@@ -1374,15 +1045,6 @@ a {
     To the top
   </a>
 
-  <!--<div class="w3-xlarge w3-section">
-      <a href="https://www.instagram.com/swemanhattan/?hl=en" target="_blank">
-        <i class="fa fa-instagram w3-hover-opacity"></i>
-      </a>
-      <p style="font-size: 18px; margin-top: -10px;">#LizAndJust</p>
-    <i class="fa fa-snapchat w3-hover-opacity swe-footer-hover-opacity"></i> 
-    <i class="fa fa-pinterest-p w3-hover-opacity swe-footer-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity swe-footer-hover-opacity"></i>
-  </div> -->
 </footer>
 
 <script>
@@ -1416,15 +1078,6 @@ function toggleFunction() {
   } else {
     x.style.display = "block";
   }
-
-  /*
-    var x = document.getElementById("navDemo");
-    if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-    } else {
-        x.className = x.className.replace(" w3-show", "");
-    }
-    */
 }
 
 // Tabbed Menu
@@ -1442,52 +1095,6 @@ function openMenu(evt, itineraryDate) {
   evt.currentTarget.firstElementChild.className += " navy-background";
 }
 document.getElementById("myLink").click();
-
-// Slideshow
-var slideIndex = 1;
-showDivs(slideIndex);
-
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
-
-function currentDiv(n) {
-  showDivs(slideIndex = n);
-}
-
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demodots");
-  if (n > x.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = x.length} ;
-  for (i = 0; i < x.length; i++) {
-     x[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-     dots[i].className = dots[i].className.replace(" w3-white", "");
-  }
-  x[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " w3-white";
-}
-
-// Google Map - set pin
-
-function myMap()
-{
-  myCenter=new google.maps.LatLng(40.88848, -73.90299);
-  var mapOptions= {
-    center:myCenter,
-    zoom:12, scrollwheel: false, draggable: false,
-    mapTypeId:google.maps.MapTypeId.ROADMAP
-  };
-  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
-
-  var marker = new google.maps.Marker({
-    position: myCenter,
-  });
-  marker.setMap(map);
-}
 
 </script>
 
