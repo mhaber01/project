@@ -71,10 +71,12 @@ h3 {
 
 /* Skinny banner */
 #top_banner {
+  position: absolute;
   background-color: #383C50;
-  padding: 6px 6px;
-  width: 100%;
-  position: fixed;
+  top: 0; 
+  left: 0; 
+  width: 100%; 
+  z-index: 99;
 }
 
 /* Create a sticky/fixed navbar */
@@ -85,7 +87,7 @@ h3 {
   transition: 0.8s; /* Adds a transition effect when the padding is decreased */
   position: fixed; /* Sticky/fixed navbar */
   width: 100%;
-  top: 0; /* At the top */
+  top: 12%;
   z-index: 99;
 }
 
@@ -475,17 +477,16 @@ a {
       <p id ="wedding_location">Beach Haven, NJ</p>
     </div>
 
-    <p id="wedding_hashtag">#ToHaveAndToHaber</p>
+    <p id="wedding_hashtag">#LizAndJust</p>
     -->
+    <!-- Rescheduling Banner -->
+      <div id="top_banner">
+        <h3 style="font-family:AmostelySignature; font-weight: inherit; color: white;">Change in plans!</h3>
+        <p style="font-weight: inherit; color: white; margin-top: -12px;">Due to recent events, we have decided to reschedule our wedding to next year, Friday, September 24, 2021. We look forward to seeing you all next year!</p>
+      </div>
 
     <!-- Title -->
     <div id="navbar" class="w3-hide-small w3-hide-medium">
-      <!-- Rescheduling Banner -->
-      <div id="top_banner">
-        <h2 style="font-family:AmostelySignature; font-weight: inherit; color: white; font-size: 32px;">Change in Plans!</h2>
-        <p style="font-weight: inherit; color: white;">Due to recent events, we have decided to reschedule our wedding to Friday, September 24, 2021. We look forward to seeing you all next year!</p>
-      </div>
-
     	<a href="#home" id="logo" class="button-title" style="font-family:AmostelySignature; font-weight: inherit;">Elizabeth & Justin</a>
     
 
@@ -508,11 +509,10 @@ a {
     <!-- Simulate a smartphone / tablet -->
     <div class="mobile-container">
       <div id="topnav" class="w3-hide-large">
-	<!-- Rescheduling Banner -->
-      	<div id="top_banner">
-		<h2 style="font-family:AmostelySignature; font-weight: inherit; color: white; font-size: 32px;">Change in Plans!</h2>
-		<p style="font-weight: inherit; color: white;">Due to recent events, we have decided to reschedule our wedding to Friday, September 24, 2021. We look forward to seeing you all next year!</p>
-      	</div>
+        <div id="top_banner">
+          <h3 style="font-family:AmostelySignature; font-weight: inherit; color: white;">Change in plans!</h3>
+          <p style="font-weight: inherit; color: white; margin-top: -12px;">Due to recent events, we have decided to reschedule our wedding to next year, Friday, September 24, 2021. We look forward to seeing you all next year!</p>
+        </div>
         <a href="#home" id="logo2" class="active" style="font-family:AmostelySignature; font-size: 60px; font-weight: inherit;">Elizabeth & Justin</a>
         <!-- Navigation links (hidden by default) -->
         <div id="myLinks" class="w3-center">
