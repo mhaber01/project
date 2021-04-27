@@ -311,33 +311,33 @@ hr {
 
 /* Create a Parallax Effect */
 .bgimg-1{
-  background-attachment: fixed;
+  background-attachment: fixed !important;
   background-position: center top 10px;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .bgimg-2{
-  background-attachment: fixed;
+  background-attachment: fixed !important;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .bgimg-3{
-  background-attachment: fixed;
+  background-attachment: fixed !important;
   background-position: center top 80px;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .bgimg-4 {
-  background-attachment: fixed;
+  background-attachment: fixed !important;
   background-position: center top left 50px;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .bgimg-5 {
-  background-attachment: fixed;
+  background-attachment: fixed !important;
   background-position: center top 30px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -345,14 +345,14 @@ hr {
 }
 
 .bgimg-6 {
-  background-attachment: fixed;
+  background-attachment: fixed !important;
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .lighthouse {
-  background-attachment: fixed;
+  background-attachment: fixed !important;
   background-position: right top 90px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -410,12 +410,13 @@ a {
 }
 
 
-/* Turn off parallax scrolling for tablets and phones */
-@media only screen and (max-device-width: 300px) {
+/* Turn off parallax scrolling for tablets and phones
+@media only screen and (max-device-width: 1024px) {
     .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6, .lighthouse {
         background-attachment: scroll;
     }
 }
+ */
 
 .itinerary {
   display: none;
