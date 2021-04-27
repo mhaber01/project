@@ -40,7 +40,7 @@ body, html {
     color: #383C50;
     /*background-color: #EEF1F2;*/
     line-height: 1.8;
-    scroll-behavior: smooth;
+    /*scroll-behavior: smooth;*/
     font-family: "neuton";
 }
 
@@ -87,7 +87,6 @@ h3 {
   transition: 0.8s; /* Adds a transition effect when the padding is decreased */
   position: fixed; /* Sticky/fixed navbar */
   width: 100%;
-  top: 10%;
   z-index: 99;
 }
 
@@ -354,7 +353,7 @@ hr {
 
 .lighthouse {
   background-attachment: fixed;
-  background-position: center top 80px;
+  background-position: right top 90px;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -411,12 +410,12 @@ a {
 }
 
 
-/* Turn off parallax scrolling for tablets and phones */
+/* Turn off parallax scrolling for tablets and phones 
 @media only screen and (max-device-width: 1024px) {
     .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6 {
         background-attachment: scroll;
     }
-}
+}*/
 
 .itinerary {
   display: none;
@@ -479,17 +478,12 @@ a {
 
     <!-- Top Left 
     <div style="position: absolute;">
-      <p id="wedding_date">September 18, 2020</p>
+      <p id="wedding_date">September 24, 2021</p>
       <p id ="wedding_location">Beach Haven, NJ</p>
     </div>
 
-    <p id="wedding_hashtag">#LizAndJust</p>
+    <p id="wedding_hashtag">#ToHaveAndToHaber</p>
     -->
-    <!-- Rescheduling Banner -->
-    <div id="top_banner" class="w3-hide-small w3-hide-medium">
-      <p style="font-family: woodford-bourne; font-weight: inherit; color: white; size: 24px;">CHANGE IN PLANS!</p>
-      <p style="font-weight: inherit; color: white; margin-top: -22px;">Due to recent events, we have decided to reschedule our wedding to Friday, September 24, 2021. We look forward to seeing you all next year!</p>
-    </div>
 
     <!-- Title -->
     <div id="navbar" class="w3-hide-small w3-hide-medium">
@@ -515,12 +509,9 @@ a {
     <!-- Simulate a smartphone / tablet -->
     <div class="mobile-container">
       <div id="topnav" class="w3-hide-large">
-        <p style="font-family: woodford-bourne; font-weight: inherit; color: #383C50; size: 22px;">CHANGE IN PLANS!</p>
-        <p style="font-weight: inherit; color: #383C50; margin-top: -16px;">We have rescheduled our wedding to Friday, September 24, 2021.</p>
-        <div class="hl"></div>
         <a href="#home" id="logo2" class="active" style="font-family:AmostelySignature; font-size: 60px; font-weight: inherit;">Elizabeth & Justin</a>
         <!-- Navigation links (hidden by default) -->
-        <div id="myLinks" class="w3-center">
+        <div id="myLinks" class="w3-center" onclick="toggleFunction()">
           <a href="#ourwedding" class="button">OUR WEDDING</a><br>
           <a href="#schedule" class="button">SCHEDULE</a><br>
           <a href="#wheretostay" class="button">WHERE TO STAY</a><br>
@@ -616,20 +607,22 @@ a {
           </div>
         </div>
         <div style="padding-top: 5%;">
-          <h5 style="font-size: 20px; font-family: woodford-bourne;">Reception</h5>
+          <h5 style="font-size: 20px; font-family: woodford-bourne;">Cocktail Hour & Reception</h5>
           <div class="w3-opacity">
             <p>Parker's Garage & Oyster Saloon</p>
             <p><a class="url" href="https://goo.gl/maps/WLi4CLMGLGx7Pnm67" target="_blank">116 Northwest Avenue, Beach Haven, NJ 08008</a></p>
-            <p>6:00 PM - 11:00 PM</p>
+            <p>TBD</p>
+            <!-- <p>6:00 PM - 11:00 PM</p> -->
           </div>
         </div>
       
         <div style="padding-top: 5%;">
           <h5 style="font-size: 20px; font-family: woodford-bourne;">After Party</h5>
             <div class="w3-opacity">
-              <p>Bird & Betty's</p>
+              <p>TBD</p>
+              <!-- <p>Bird & Betty's</p>
               <p><a class="url" href="https://goo.gl/maps/1oHxx6huaUSMmkBy7" target="_blank">529 Dock Road, Beach Haven, NJ 08008</a></p>
-              <p>11:00 PM</p>
+              <p>11:00 PM</p> -->
             </div>
         </div>
       </div>
@@ -678,15 +671,17 @@ a {
 
   <div class="w3-center w3-hide-small">
     <div style="width: 70%; display: block; margin: auto;">
-      <p>Room blocks are available at two hotels under the Schumann – Haber reservation at the Drifting Sands Hotel and Holiday Inn Manahawkin. Transportation will be provided from both hotels and more information will be provided upon check in. We also have two additional non-block hotel recommendations that are oceanfront and located in the heart of Beach Haven. Both are very close to the venue! More information about each hotel and additional non-block accommodations are listed below for your reference. Please feel free to reach out if you have any questions when booking your stay!</p>
-      <p>We would love our guests to stay for a long weekend and enjoy all the things we love about Beach Haven and Long Beach Island! We highly recommend renting a house on the island through Diane Turton realtors or online booking through AirBnB, HomeAway or VRBO since September is a beautiful month to rent at the beach. Although September is also considered “off-season”, the island is a popular area year-round and houses do book up quickly, so don’t wait, book now! We recommend staying in Beach Haven (or very close to it) as the ceremony and reception will be held here and many of our recommended and favorite things to do are in this area. We look forward to seeing everyone on the island!</p>
+      <p>Room blocks are available at Drifting Sands Hotel and Holiday Inn Manahawkin under the Schumann – Haber reservation. Transportation will be provided from both hotels.</p>
+      <p> We also have two additional non-block hotel recommendations that are oceanfront and located in the heart of Beach Haven. Both are very close to the venue! More information below.</p>
+      <p>Lastly, we would love our guests to stay for a long weekend and enjoy all the things we love about Beach Haven and Long Beach Island! We highly recommend renting a house on the island through Diane Turton realtors or online booking through AirBnB, VRBO, or the other online rental sites listed since September is a beautiful month to rent at the beach. Although September is also considered “off-season”, the island is a popular area year-round and houses do book up quickly, so don’t wait, book now! We recommend staying in Beach Haven (or very close to it) as the ceremony and reception will be held here and many of our recommended and favorite things to do are in this area. We look forward to seeing everyone on the island!</p>
     </div>
   </div>
 
   <div class="w3-center w3-hide-medium w3-hide-large">
     <div style="margin-top: -15px; height:250px; width:100%; overflow:auto;">
-      <p>Room blocks are available at two hotels under the Schumann – Haber reservation at the Drifting Sands Hotel and Holiday Inn Manahawkin. Transportation will be provided from both hotels and more information will be provided upon check in. We also have two additional non-block hotel recommendations that are oceanfront and located in the heart of Beach Haven. Both are very close to the venue! More information about each hotel and additional non-block accommodations are listed below for your reference. Please feel free to reach out if you have any questions when booking your stay!</p>
-      <p>We would love our guests to stay for a long weekend and enjoy all the things we love about Beach Haven and Long Beach Island! We highly recommend renting a house on the island through Diane Turton realtors or online booking through AirBnB, HomeAway or VRBO since September is a beautiful month to rent at the beach. Although September is also considered “off-season”, the island is a popular area year-round and houses do book up quickly, so don’t wait, book now! We recommend staying in Beach Haven (or very close to it) as the ceremony and reception will be held here and many of our recommended and favorite things to do are in this area. We look forward to seeing everyone on the island!</p>
+      <p>Room blocks are available at Drifting Sands Hotel and Holiday Inn Manahawkin under the Schumann – Haber reservation. Transportation will be provided from both hotels.</p>
+      <p>We also have two additional non-block hotel recommendations that are oceanfront and located in the heart of Beach Haven. Both are very close to the venue! More information below.</p>
+      <p>Lastly, we would love our guests to stay for a long weekend and enjoy all the things we love about Beach Haven and Long Beach Island! We highly recommend renting a house on the island through Diane Turton realtors or online booking through AirBnB, VRBO, or the other online rental sites listed since September is a beautiful month to rent at the beach. Although September is also considered “off-season”, the island is a popular area year-round and houses do book up quickly, so don’t wait, book now! We recommend staying in Beach Haven (or very close to it) as the ceremony and reception will be held here and many of our recommended and favorite things to do are in this area. We look forward to seeing everyone on the island!</p>
     </div>
   </div>
 
@@ -697,8 +692,8 @@ a {
     <div class="center-row">
       <div class="row"><br>
         <div class="w3-container" style="height: 100%; width: 40%; margin-right: 40px;">
-          <h3 style="font-size: 20px;">Diane Turton House Rentals</h3>
-          <p class="w3-opacity">217 N Bay Avenue, Beach Haven, NJ 08008<br>(609) 713-0307<br><a class="url" target="_blank" href=mailto:vmessec@dianeturton.com>vmessec@dianeturton.com</a></p>
+          <h3 style="font-size: 20px;"><a href="https://www.dianeturton.com/offices/4633-beach-haven-office" target="_blank" class="url">Diane Turton House Rentals</a></h3>
+          <p class="w3-opacity">217 N Bay Avenue, Beach Haven, NJ 08008<br>(609) 713-0307
           <div style="margin-top: -15px; height:250px; width:100%; overflow:auto;">
             <p>If you are interested in booking a house for a longer stay, please reach out to our realtor Virginia Messac a.k.a “Cookie”, who has a variety of homes available to rent.</p>
           </div>
@@ -708,16 +703,11 @@ a {
         <div class="vl"></div>
 
         <div class="w3-container" style="height: 100%; width: 40%;">
-          <h3 style="font-size: 20px;">HomeAway, AirBNB, & VRBO</h3>
-          <p class="w3-opacity"><a class="url" target="_blank" href="https://www.homeaway.com/">homeaway.com</a><br><a class="url" target="_blank" href="https://www.airbnb.com/">airbnb.com</a><br><a class="url" target="_blank" href="https://www.vrbo.com/">vrbo.com</a></p>
+          <h3 style="font-size: 20px;"><a class="url" target="_blank" href="https://www.airbnb.com/">AirBNB</a>, <a class="url" target="_blank" href="https://www.vrbo.com/">VRBO</a>, <a class="url" href="https://www.vacationrentalslbi.com/" target="_blank">Vacation Rentals LBI</a>, & <a class="url" href="http://shoresummerrentals.com/" target="_blank">Shore Summer Rentals</a></h3>
+          <p class="w3-opacity"><br></p>
           <div style="margin-top: -15px; height:250px; width:100%; overflow:auto;">
-            <p>If you are looking for a longer stay we encourage renting through one of these online options which all have great houses available on the island at an affordable price! Some of the properties listed are looking for a full week rental, but if you contact the property owner, they will often accommodate a shorter rental period.<br>Two other sites to check are: <a class="url" href="https://www.vacationrentalslbi.com/" target="_blank"><em>VacationRentalslbi.com</em></a> and <a class="url" href="http://shoresummerrentals.com/" target="_blank"><em>ShoresummerRentals.com</em></a></p>
+            <p>We encourage renting through one of these online options which all have great houses available on the island at an affordable price! Some of the properties listed are looking for a full week rental, but if you contact the property owner, they will often accommodate a shorter rental period.</p>
           </div>
-          <p style="display: inline-block;">
-            <a href="https://www.homeaway.com/" target="_blank" class="booknow" style="width:105px;">HOMEAWAY</a>
-            <a href="https://www.airbnb.com/" target="_blank" class="booknow" style="width:105px; margin-left: 2px;">AIRBNB</a>
-            <a href="https://www.vrbo.com/" target="_blank" class="booknow" style="width:105px; margin-left: 2px;">VRBO</a>
-          </p>
         </div>
       </div>
     </div>
@@ -726,7 +716,7 @@ a {
     <div class="center-row">
       <div class="row"><br>
         <div class="w3-container" style="height: 100%; width: 40%; margin-right: 40px;">
-          <h3 style="font-size: 20px;">Drifting Sands Oceanfront Hotel</h3>
+          <h3 style="font-size: 20px;"><a href="https://www.dslbi.com/" target="_blank" class="url">Drifting Sands Oceanfront Hotel</a></h3>
           <p class="w3-opacity">119 East 9th Street, Ship Bottom, NJ 08008<br>(877) 524-7866<br><em>Located on island 15 minutes north from venue</em></p>
           <div style="margin-top: -15px; height:250px; width:100%; overflow:auto;">
             <p>Please call the hotel directly to make a reservation under the Schumann – Haber wedding in order to get the group rates for the Ocean Side block. All reservations must be made on or before the cut-off date of 8/5/2020 or the rooms get released to the public. The Ocean Side rooms include a king bed or double beds, please request your preference upon booking. Additional room options at the hotel are available. The front desk is open 9am-5pm, 7 days a week during the high season from April 1st through mid-October. If booking during the off season, please leave a voicemail as the desk will call you back to assist with the reservation within a week.</p>
@@ -737,7 +727,7 @@ a {
         <div class="vl"></div>
 
         <div class="w3-container" style="height: 100%; width: 40%;">
-          <h3 style="font-size: 20px;">Holiday Inn Manahawkin</h3>
+          <h3 style="font-size: 20px;"><a href="https://www.ihg.com/holidayinn/hotels/us/en/manahawkin/hwwnj/hoteldetail" target="_blank" class="url">Holiday Inn Manahawkin</a></h3>
           <p class="w3-opacity">151 New Jersey 72, Stafford Township, NJ 08050<br>(609) 481-6100<br><em>Located off island 30 minutes from venue</em></p>
           <div style="margin-top: -15px; height:250px; width:100%; overflow:auto;">
             <p>To make reservations please call the hotel directly or visit the website link below to book directly online with the group code SHW. If you call the hotel, please mention the Schumann – Haber wedding. Please make your reservation by 8/18/19 as rooms will be released to the public.</p>
@@ -751,7 +741,7 @@ a {
     <div class="center-row">
       <div class="row"><br>
         <div class="w3-container" style="height: 100%; width: 40%; margin-right: 40px;">
-          <h3 style="font-size: 20px;">The Engleside Inn</h3>
+          <h3 style="font-size: 20px;"><a href="https://www.engleside.com/" target="_blank" class="url">The Engleside Inn</a></h3>
           <p class="w3-opacity">30 Engleside Avenue, Beach Haven, NJ 08008<br>(800) 762-2214<br><em>Within walking distance to church and venue</em></p>
           <div style="margin-top: -15px; height:250px; width:100%; overflow:auto;">
             <p>This is a family oriented historic inn located beachfront in the heart of Beach Haven and walkable to the island’s main attractions. Just a few blocks from cute boutiques and shopping, amusement parks, museums, restaurants and bar hang outs.</p>
@@ -762,7 +752,7 @@ a {
         <div class="vl"></div>
 
         <div class="w3-container" style="height: 100%; width: 40%;">
-          <h3 style="font-size: 20px;">The Sea Shell Resort and Beach Club</h3>
+          <h3 style="font-size: 20px;"><a href="https://theseashellresort.com/" target="_blank" class="url">The Sea Shell Resort and Beach Club</a></h3>
           <p class="w3-opacity">10 S Atlantic Avenue, Beach Haven, NJ 08008<br>(609) 492-4611<br><em>Within walking distance to church and venue</em></p>
           <div style="margin-top: -15px; height:250px; width:100%; overflow:auto;">
             <p>This is a popular beach front resort located in the heart of Beach Haven with a super fun tiki bar and grill (tiki tea’s are a must try!) and one of our favorite post beach happy hour spots with live music! Just a few blocks from walkable attractions including shopping, amusement parks, museums, restaurants and bar hang outs.</p>
@@ -779,8 +769,8 @@ a {
 
     <h3>Rental Housing</h3>
     <div class="w3-container" style="height: 100%; width: 100%;">
-      <h3 style="font-size: 20px;">Diane Turton House Rentals</h3>
-      <p class="w3-opacity">217 N Bay Avenue, Beach Haven, NJ 08008<br>(609) 713-0307<br><a class="url" target="_blank" href=mailto:vmessec@dianeturton.com>vmessec@dianeturton.com</a></p>
+      <h3 style="font-size: 20px;"><a href="https://www.dianeturton.com/offices/4633-beach-haven-office" target="_blank" class="url">Diane Turton House Rentals</a></h3>
+      <p class="w3-opacity">217 N Bay Avenue, Beach Haven, NJ 08008<br>(609) 713-0307</p>
       <div style="margin-top: -15px; width:100%; overflow:auto;">
         <p>If you are interested in booking a house for a longer stay, please reach out to our realtor Virginia Messac a.k.a “Cookie”, who has a variety of homes available to rent.</p>
       </div>
@@ -788,23 +778,17 @@ a {
     </div>
 
     <div class="w3-container" style="height: 100%; width: 100%;">
-      <h3 style="font-size: 20px;">HomeAway, AirBNB, & VRBO</h3>
-      <p class="w3-opacity"><a class="url" target="_blank" href="https://www.homeaway.com/">homeaway.com</a><br><a class="url" target="_blank" href="https://www.airbnb.com/">airbnb.com</a><br><a class="url" target="_blank" href="https://www.vrbo.com/">vrbo.com</a></p>
+      <h3 style="font-size: 20px;"><a class="url" target="_blank" href="https://www.airbnb.com/">AirBNB</a>, <a class="url" target="_blank" href="https://www.vrbo.com/">VRBO</a>, <a class="url" href="https://www.vacationrentalslbi.com/" target="_blank">Vacation Rentals LBI</a>, & <a class="url" href="http://shoresummerrentals.com/" target="_blank">Shore Summer Rentals</a></h3>
       <div style="margin-top: -15px; height:250px; width:100%; overflow:auto;">
-        <p>If you are looking for a longer stay we encourage renting through one of these online options which all have great houses available on the island at an affordable price! Some of the properties listed are looking for a full week rental, but if you contact the property owner, they will often accommodate a shorter rental period.<br>Two other sites to check are: <a class="url" href="https://www.vacationrentalslbi.com/" target="_blank"><em>VacationRentalslbi.com</em></a> and <a class="url" href="http://shoresummerrentals.com/" target="_blank"><em>ShoresummerRentals.com</em></a></p>
+        <p>We encourage renting through one of these online options which all have great houses available on the island at an affordable price! Some of the properties listed are looking for a full week rental, but if you contact the property owner, they will often accommodate a shorter rental period.</p>
       </div>
-      <p style="display: inline-block;">
-        <a href="https://www.homeaway.com/" target="_blank" class="booknow" style="width:105px;">HOMEAWAY</a>
-        <a href="https://www.airbnb.com/" target="_blank" class="booknow" style="width:105px; margin-left: 2px;">AIRBNB</a>
-        <a href="https://www.vrbo.com/" target="_blank" class="booknow" style="width:105px; margin-left: 2px;">VRBO</a>
-      </p>
     </div>
 
     <hr>
 
     <h3>Blocked Hotels</h3>
     <div class="w3-container" style="height: 100%; width: 100%;">
-      <h3 style="font-size: 20px;">Drifting Sands Oceanfront Hotel</h3>
+      <h3 style="font-size: 20px;"><a href="https://www.dslbi.com/" target="_blank" class="url">Drifting Sands Oceanfront Hotel</a></h3>
       <p class="w3-opacity">119 East 9th Street, Ship Bottom, NJ 08008<br>(877) 524-7866<br><em>Located on island 15 minutes north from venue</em></p>
       <div style="margin-top: -15px; height:250px; width:100%; overflow:auto;">
         <p>Please call the hotel directly to make a reservation under the Schumann – Haber wedding in order to get the group rates for the Ocean Side block. All reservations must be made on or before the cut-off date of 8/5/2020 or the rooms get released to the public. The Ocean Side rooms include a king bed or double beds, please request your preference upon booking. Additional room options at the hotel are available. The front desk is open 9am-5pm, 7 days a week during the high season from April 1st through mid-October. If booking during the off season, please leave a voicemail as the desk will call you back to assist with the reservation within a week.</p>
@@ -813,7 +797,7 @@ a {
     </div>
 
     <div class="w3-container" style="height: 100%; width: 100%;">
-      <h3 style="font-size: 20px;">Holiday Inn Manahawkin</h3>
+      <h3 style="font-size: 20px;"><a href="https://www.ihg.com/holidayinn/hotels/us/en/manahawkin/hwwnj/hoteldetail" target="_blank" class="url">Holiday Inn Manahawkin</a></h3>
       <p class="w3-opacity">151 New Jersey 72, Stafford Township, NJ 08050<br>(609) 481-6100<br><em>Located off island 30 minutes from venue</em></p>
       <div style="margin-top: -15px; width:100%; overflow:auto;">
         <p>To make reservations please call the hotel directly or visit the website link below to book directly online with the group code SHW. If you call the hotel, please mention the Schumann – Haber wedding. Please make your reservation by 8/18/19 as rooms will be released to the public.</p>
@@ -825,7 +809,7 @@ a {
 
     <h3>Other Hotel Options</h3>
     <div class="w3-container" style="height: 100%; width: 100%;">
-      <h3 style="font-size: 20px;">The Engleside Inn</h3>
+      <h3 style="font-size: 20px;"><a href="https://www.engleside.com/" target="_blank" class="url">The Engleside Inn</a></h3>
       <p class="w3-opacity">30 Engleside Avenue, Beach Haven, NJ 08008<br>(800) 762-2214<br><em>Within walking distance to church and venue</em></p>
       <div style="margin-top: -15px; width:100%; overflow:auto;">
         <p>This is a family oriented historic inn located beachfront in the heart of Beach Haven and walkable to the island’s main attractions. Just a few blocks from cute boutiques and shopping, amusement parks, museums, restaurants and bar hang outs.</p>
@@ -834,7 +818,7 @@ a {
     </div>
 
     <div class="w3-container" style="height: 100%; width: 100%;">
-      <h3 style="font-size: 20px;">The Sea Shell Resort and Beach Club</h3>
+      <h3 style="font-size: 20px;"><a href="https://theseashellresort.com/" target="_blank" class="url">The Sea Shell Resort and Beach Club</a></h3>
       <p class="w3-opacity">10 S Atlantic Avenue, Beach Haven, NJ 08008<br>(609) 492-4611<br><em>Within walking distance to church and venue</em></p>
       <div style="margin-top: -15px; width:100%; overflow:auto;">
         <p>This is a popular beach front resort located in the heart of Beach Haven with a super fun tiki bar and grill (tiki tea’s are a must try!) and one of our favorite post beach happy hour spots with live music! Just a few blocks from walkable attractions including shopping, amusement parks, museums, restaurants and bar hang outs.</p>
@@ -863,12 +847,14 @@ a {
   </div>
   <div class="w3-center w3-hide-small">
     <div style=" display:inline-block; overflow:hidden;">
-      <iframe style="position:relative; border: none; " src="https://www.google.com/maps/d/embed?mid=1j51JUreXwJ91eCJExhc2_ma9ghmCSAKZ" width="700" height="400"></iframe>
+      <p class="w3-opacity">Map Coming Soon!</p>
+      <!-- <iframe style="position:relative; border: none; " src="https://www.google.com/maps/d/embed?mid=1j51JUreXwJ91eCJExhc2_ma9ghmCSAKZ" width="700" height="400"></iframe> -->
     </div>
   </div>
   <div class="w3-center w3-hide-large w3-hide-medium">
     <div style="display:inline-block; overflow:hidden; width: 100%; height: 80%;">
-      <iframe style="position:relative; border: none; " src="https://www.google.com/maps/d/embed?mid=1j51JUreXwJ91eCJExhc2_ma9ghmCSAKZ" width="700" height="400"></iframe>
+      <p class="w3-opacity">Map Coming Soon!</p>
+      <!-- <iframe style="position:relative; border: none; " src="https://www.google.com/maps/d/embed?mid=1j51JUreXwJ91eCJExhc2_ma9ghmCSAKZ" width="700" height="400"></iframe> -->
     </div>
   </div>
 
@@ -898,8 +884,8 @@ a {
       <div class="center-row">
         <div class="row"><br>
           <div class="w3-container" style="height: 100%; width: 40%; margin-right: 40px;">
-            <h3 style="font-size: 20px;">Mike’s Affordable Shuttle Service</h3>
-            <p class="w3-opacity">Long Beach Island, NJ<br>(609) 287-3028<br><a class="url" target="_blank" href="http://www.mikesaffordableshuttle.com/">http://www.mikesaffordableshuttle.com/</a></p>
+            <h3 style="font-size: 20px;"><a class="url" target="_blank" href="http://www.mikesaffordableshuttle.com/">Mike’s Affordable Shuttle Service</a></h3>
+            <p class="w3-opacity">Long Beach Island, NJ<br>(609) 287-3028</p>
             <div style="margin-top: -15px; height:250px; width:100%; overflow:auto;">
               <p>Uber and Lyft are limited on the island, we recommend this local taxi service just in case!</p>
             </div>
@@ -909,8 +895,8 @@ a {
           <div class="vl"></div>
 
           <div class="w3-container" style="height: 100%; width: 40%;">
-            <h3 style="font-size: 20px;">LBI Shuttle</h3>
-            <p class="w3-opacity">Long Beach Island, NJ<br>(609) 342-2111<br><a class="url" target="_blank" href="https://www.lbishuttle.com/"> https://www.lbishuttle.com/</a></p>
+            <h3 style="font-size: 20px;"><a class="url" target="_blank" href="https://www.lbishuttle.com/">LBI Shuttle</a></h3>
+            <p class="w3-opacity">Long Beach Island, NJ<br>(609) 342-2111</p>
             <div style="margin-top: -15px; height:250px; width:100%; overflow:auto;">
               <p>Long Beach Island Shuttles are a shuttle service that is run along all 18 miles of the island. With designated areas to stop it is easy to find a trolley and waive them down to get anywhere you need.</p>
               <p>Shuttle Fees:<li>$2 per ride 10am - 7pm.</li><li>$5 per ride 7pm - close</li><li>$125 season pass (all times)</li></p>
@@ -924,8 +910,8 @@ a {
       <div class="center-row">
         <div class="row"><br>
           <div class="w3-container" style="height: 100%; width: 40%; margin-right: 40px;">
-            <h3 style="font-size: 20px;">AJ's Bike Rentals</h3>
-            <p class="w3-opacity">311 Bay Ave, Beach Haven, NJ 08008<br>(609) 492-2626<br><a class="url" target="_blank" href="https://www.yelp.com/biz/a-js-rentals-beach-haven">AJ's Bike Rentals - Yelp</a></p>
+            <h3 style="font-size: 20px;"><a class="url" target="_blank" href="https://www.yelp.com/biz/a-js-rentals-beach-haven">AJ's Bike Rentals</a></h3>
+            <p class="w3-opacity">311 Bay Ave, Beach Haven, NJ 08008<br>(609) 492-2626</p>
             <div style="margin-top: -15px; height:250px; width:100%; overflow:auto;">
               <p>Our go-to bike rental spot! A family owned business with reasonable prices and great service!</p>
             </div>
@@ -935,8 +921,8 @@ a {
           <div class="vl"></div>
 
           <div class="w3-container" style="height: 100%; width: 40%;">
-            <h3 style="font-size: 20px;">Surf Buggy Bike Shop</h3>
-            <p class="w3-opacity">1501 Long Beach Blvd, Beach Haven, NJ 08008<br>(609) 342-1458<br><a class="url" href="http://www.surfbuggylbi.com/">http://www.surfbuggylbi.com/</a></p>
+            <h3 style="font-size: 20px;"><a class="url" href="http://www.surfbuggylbi.com/">Surf Buggy Bike Shop</a></h3>
+            <p class="w3-opacity">1501 Long Beach Blvd, Beach Haven, NJ 08008<br>(609) 342-1458</p>
             <div style="margin-top: -15px; height:250px; width:100%; overflow:auto;">
               <p>A local bike shop located in Beach Haven with a large variety of bike rentals!</p>
             </div>
@@ -951,7 +937,7 @@ a {
     <div class="w3-container w3-center w3-hide-medium w3-hide-large">
       <h3>Taxi & Shuttle Services</h3>
       <div class="w3-container" style="height: 100%; width: 100%;">
-        <h3 style="font-size: 20px;">Mike’s Affordable Shuttle Service</h3>
+        <h3 style="font-size: 20px;"><a class="url" target="_blank" href="http://www.mikesaffordableshuttle.com/">Mike’s Affordable Shuttle Service</a></h3>
         <p class="w3-opacity">Long Beach Island, NJ<br>(609) 287-3028<br><a class="url" target="_blank" href="http://www.mikesaffordableshuttle.com/">http://www.mikesaffordableshuttle.com/</a></p>
         <div style="margin-top: -15px; width:100%; overflow:auto;">
           <p>Uber and Lyft are limited on the island, we recommend this local taxi service just in case!</p>
@@ -959,7 +945,7 @@ a {
         <p><a href="http://www.mikesaffordableshuttle.com/" target="_blank" class="booknow" style="width:105px;">VISIT SITE</a></p>
       </div>
       <div class="w3-container" style="height: 100%; width: 100%;">
-        <h3 style="font-size: 20px;">LBI Shuttle</h3>
+        <h3 style="font-size: 20px;"><a class="url" target="_blank" href="https://www.lbishuttle.com/">LBI Shuttle</a></h3>
         <p class="w3-opacity">Long Beach Island, NJ<br>(609) 342-2111<br><a class="url" target="_blank" href="https://www.lbishuttle.com/"> https://www.lbishuttle.com/</a></p>
         <div style="margin-top: -15px; width:100%; overflow:auto;">
           <p>Long Beach Island Shuttles are a shuttle service that is run along all 18 miles of the island. With designated areas to stop it is easy to find a trolley and waive them down to get anywhere you need.</p>
@@ -972,7 +958,7 @@ a {
 
       <h3>Bike Rentals</h3>
       <div class="w3-container" style="height: 100%; width: 100%;">
-        <h3 style="font-size: 20px;">AJ's Bike Rentals</h3>
+        <h3 style="font-size: 20px;"><a class="url" target="_blank" href="https://www.yelp.com/biz/a-js-rentals-beach-haven">AJ's Bike Rentals</a></h3>
         <p class="w3-opacity">311 Bay Ave, Beach Haven, NJ 08008<br>(609) 492-2626<br><a class="url" target="_blank" href="https://www.yelp.com/biz/a-js-rentals-beach-haven">AJ's Bike Rentals - Yelp</a></p>
         <div style="margin-top: -15px; width:100%; overflow:auto;">
           <p>Our go-to bike rental spot! A family owned business with reasonable prices and great service!</p>
@@ -981,7 +967,7 @@ a {
       </div>
 
       <div class="w3-container" style="height: 100%; width: 100%;">
-        <h3 style="font-size: 20px;">Surf Buggy Bike Shop</h3>
+        <h3 style="font-size: 20px;"><a class="url" href="http://www.surfbuggylbi.com/">Surf Buggy Bike Shop</a></h3>
         <p class="w3-opacity">1501 Long Beach Blvd, Beach Haven, NJ 08008<br>(609) 342-1458<br><a class="url" href="http://www.surfbuggylbi.com/">http://www.surfbuggylbi.com/</a></p>
         <div style="margin-top: -15px; width:100%; overflow:auto;">
           <p>A local bike shop located in Beach Haven with a large variety of bike rentals!</p>
@@ -1127,6 +1113,10 @@ function toggleFunction() {
   } else {
     x.style.display = "block";
   }
+}
+
+function unshowNavigationMenu() {
+
 }
 
 // Tabbed Menu
