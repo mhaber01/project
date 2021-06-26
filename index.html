@@ -156,6 +156,31 @@ h3 {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
+.booknow_box{
+  display:inline-block;
+  text-decoration:none;
+  font-family: woodford-bourne;
+  color: #383C50;
+  font-size:15px;
+  font-weight:600;
+  line-height:100%;
+  border: none;
+  -webkit-appearance: inherit;
+  background-color: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-user-select:none;
+  -webkit-font-smoothing:antialiased!important;
+  cursor:pointer;
+}
+
+.booknow_box:hover{
+  border: 2px solid currentColor;
+  color: #77633d;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
 a.url:hover{
   border-bottom: 2px solid currentColor;
   color: #77633d;
@@ -297,6 +322,8 @@ hr {
 
 .card_border {
   border: 3px solid #151B54;
+  padding: 5px;
+  padding-top: 7px;
   /* position: absolute; */
 }
 
@@ -473,6 +500,20 @@ a {
   top: 0;
 }
 
+.rsvp {
+  right: 0;
+  position: absolute;
+  margin: auto;
+  margin-top: -10px;
+}
+
+.rsvp_smallscreen {
+  left: 0;
+  position: absolute;
+  margin: auto;
+  margin-top: -10px;
+}
+
 </style>
 
 <body>
@@ -480,18 +521,14 @@ a {
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
   <div class="w3-center">
-
-    <!-- Top Left 
-    <div style="position: absolute;">
-      <p id="wedding_date">September 24, 2021</p>
-      <p id ="wedding_location">Beach Haven, NJ</p>
-    </div>
-
-    <p id="wedding_hashtag">#ToHaveAndToHaber</p>
-    -->
-
+   
     <!-- Title -->
     <div id="navbar" class="w3-hide-small w3-hide-medium">
+      <div class="rsvp" style="margin-right: 5%;">
+        <p><a href="https://www.eventbrite.com/e/liz-justins-brunch-rsvp-tickets-160157095183" target="_blank" class="booknow_box card_border" style="width:120px;">RSVP FOR BRUNCH</a></p>
+      </div>
+  
+      <!-- <p id="wedding_hashtag">#ToHaveAndToHaber</p> -->
     	<a href="#home" id="logo" class="button-title" style="font-family:AmostelySignature; font-weight: inherit;">Elizabeth & Justin</a>
     
 
@@ -514,6 +551,9 @@ a {
     <!-- Simulate a smartphone / tablet -->
     <div class="mobile-container">
       <div id="topnav" class="w3-hide-large">
+        <div class="rsvp_smallscreen" style="margin-left: 2%;">
+          <p><a href="https://www.eventbrite.com/e/liz-justins-brunch-rsvp-tickets-160157095183" target="_blank" class="booknow_box card_border" style="width:75px;">BRUNCH RSVP</a></p>
+        </div>
         <a href="#home" id="logo2" class="active" style="font-family:AmostelySignature; font-size: 60px; font-weight: inherit;">Elizabeth & Justin</a>
         <!-- Navigation links (hidden by default) -->
         <div id="myLinks" class="w3-center" onclick="toggleFunction()">
@@ -618,7 +658,7 @@ a {
           <div class="w3-opacity">
             <p><a class="url" href="https://goo.gl/maps/WLi4CLMGLGx7Pnm67" target="_blank">116 Northwest Avenue, Beach Haven, NJ 08008</a></p>
             <p>6:00 PM - 11:00 PM</p>
-            <p><em>Transportation shuttle will pick guests up at 5:00 PM starting at Drifitng Sands and end at Engelside Inn (~5:30 PM).</em></p>
+            <p><em>Transportation shuttle will pick guests up at: <br>Drifitng Sands - 5:00 PM<br>Engelside Inn - 5:30 PM</em></p>
           </div>
         </div>
       
@@ -641,7 +681,7 @@ a {
             <p><a class="url" href="https://goo.gl/maps/1oHxx6huaUSMmkBy7" target="_blank">529 Dock Road, Beach Haven, NJ 08008</a></p>
             <p>10:30 AM - 12:30 PM</p>
           </div>
-            <p><a href="https://www.eventbrite.com/e/liz-justins-brunch-rsvp-tickets-160157095183" target="_blank" class="booknow" style="width:105px;">RSVP</a></p>
+            <p><a href="https://www.eventbrite.com/e/liz-justins-brunch-rsvp-tickets-160157095183" target="_blank" class="booknow_box card_border" style="width:105px;">RSVP</a></p>
           <div class="w3-opacity">
             <p><em>Recover with us back at Bird and Betty's the morning after with Mimosas, Bloody Mary's and Brunch bites! Please RSVP below if you plan on joining. Not sure yet? No worries! RSVP not required but would be helpful in advance.</em></p>
           </div>
@@ -691,16 +731,16 @@ a {
 
   <div class="w3-center w3-hide-small">
     <div style="width: 70%; display: block; margin: auto;">
-      <p>Room blocks are available at Drifting Sands Hotel and Holiday Inn Manahawkin under the Schumann – Haber reservation. Transportation will be provided from both hotels.</p>
-      <p>We also have two additional non-block hotel recommendations that are oceanfront and located in the heart of Beach Haven. Both are very close to the venue! More information below.</p>
+      <p>A room block is available at Drifting Sands Hotel under the Schumann – Haber reservation. Transportation will be provided from this hotel to the reception. </p>
+      <p>We also have a few additional non-block hotel recommendations that are oceanfront, affordable and located in the heart of Beach Haven. Most are very close to the reception. Transportation will also be provided to reception at the Engleside Inn. </p>
       <p>Lastly, we would love our guests to stay for a long weekend and enjoy all the things we love about Beach Haven and Long Beach Island! We highly recommend renting a house on the island through Diane Turton realtors or online booking through AirBnB, VRBO, or the other online rental sites listed since September is a beautiful month to rent at the beach. Although September is also considered “off-season”, the island is a popular area year-round and houses do book up quickly, so don’t wait, book now! We recommend staying in Beach Haven (or very close to it) as the ceremony and reception will be held here and many of our recommended and favorite things to do are in this area. We look forward to seeing everyone on the island!</p>
     </div>
   </div>
 
   <div class="w3-center w3-hide-medium w3-hide-large">
     <div style="margin-top: -15px; height:350px; width:100%; overflow:auto;">
-      <p>Room blocks are available at Drifting Sands Hotel and Holiday Inn Manahawkin under the Schumann – Haber reservation. Transportation will be provided from both hotels.</p>
-      <p>We also have two additional non-block hotel recommendations located in the heart of Beach Haven, both are very close to the venue!</p>
+      <p>A room block is available at Drifting Sands Hotel under the Schumann – Haber reservation. Transportation will be provided from this hotel to the reception. </p>
+      <p>We also have a few additional non-block hotel recommendations that are oceanfront, affordable and located in the heart of Beach Haven. Most are very close to the reception. Transportation will also be provided to reception at the Engleside Inn. </p>
       <p>Lastly, we would love our guests to stay for a long weekend and enjoy all the things we love about Beach Haven and Long Beach Island! We highly recommend renting a house on the island since September is a beautiful month to rent at the beach. Although September is also considered “off-season”, the island is a popular area year-round and houses do book up quickly, so don’t wait, book now! We recommend staying in Beach Haven (or very close to it) as the ceremony and reception will be held here and many of our recommended and favorite things to do are in this area. We look forward to seeing everyone on the island!</p>
     </div>
   </div>
@@ -821,6 +861,7 @@ a {
       <p class="w3-opacity">119 East 9th Street, Ship Bottom, NJ 08008<br>(877) 524-7866<br><em>Located on island 15 minutes north from venue</em></p>
       <div style="margin-top: -15px; height:250px; width:100%; overflow:auto;">
         <p>Please call the hotel directly to make a reservation under the Schumann – Haber wedding in order to get the group rates for the Ocean Side block. All reservations must be made on or before the cut-off date 8/5/2021 or the rooms get released to the public. Front desk is open 9am-5pm, 7 days a week from April 1st - mid-October. Please leave a voicemail if no one picks up and the desk will call you back to assist.</p>
+        <p>All reservations must be made on or before the cut-off date 8/25/2021.</p>
       </div>
       <!--<p><a href="https://www.dslbi.com/" target="_blank" class="booknow" style="width:105px;">BOOK NOW</a></p>-->
     </div>
